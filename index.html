@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hannah Lim is a Business AI Systems undergraduate building applied AI, data products, and full-stack software." />
+    <meta name="theme-color" content="#101014" />
+    <meta property="og:title" content="Hannah Lim | AI and Product Portfolio" />
+    <meta property="og:description" content="Applied AI, full-stack products, and stakeholder-led technology projects." />
+    <meta property="og:type" content="website" />
+    <title>Hannah Lim | AI and Product Portfolio</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Hannah Lim home">
+        <span class="brand-mark">HL</span>
+        <span class="brand-name">Hannah Lim</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero section-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> AI systems + product engineering</p>
+          <h1>I build intelligent products around <em>real human needs.</em></h1>
+          <p class="hero-intro">
+            I’m Hannah, a Business AI Systems undergraduate in Singapore. I work across machine learning,
+            full-stack development, and product thinking to turn messy problems into useful software.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">See selected work <span aria-hidden="true">↘</span></a>
+            <a class="button button-secondary" href="mailto:hannah.jx.lim@gmail.com">Let’s talk</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel reveal" aria-label="Profile highlights">
+          <div class="hero-monogram" aria-hidden="true">H</div>
+          <div class="hero-panel-copy">
+            <p class="panel-kicker">Current direction</p>
+            <p class="panel-statement">Applied AI that earns its place in the product.</p>
+          </div>
+          <dl class="quick-facts">
+            <div>
+              <dt>Based in</dt>
+              <dd>Singapore</dd>
+            </div>
+            <div>
+              <dt>Studying</dt>
+              <dd>NUS Business AI Systems</dd>
+            </div>
+            <div>
+              <dt>Previously</dt>
+              <dd>SAP Legal Technology</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <div class="capability-strip" aria-label="Core capabilities">
+        <div class="strip-track">
+          <span>Machine learning</span><i>✦</i><span>Product development</span><i>✦</i><span>Full-stack systems</span><i>✦</i>
+          <span>Data engineering</span><i>✦</i><span>Stakeholder collaboration</span><i>✦</i><span>Explainable AI</span><i>✦</i>
+          <span>Machine learning</span><i>✦</i><span>Product development</span><i>✦</i><span>Full-stack systems</span><i>✦</i>
+          <span>Data engineering</span><i>✦</i><span>Stakeholder collaboration</span><i>✦</i><span>Explainable AI</span><i>✦</i>
+        </div>
+      </div>
+
+      <section id="work" class="section section-shell">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span></span> Selected work</p>
+            <h2>Products, models, and systems with a purpose.</h2>
+          </div>
+          <p>Five projects across recommendation systems, mobile product design, sustainability, analytics, and community technology.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project project-featured project-binge reveal">
+            <div class="project-media">
+              <img src="assets/bingebuddy-landing.png" alt="BingeBuddy movie recommendation landing page" loading="eager" />
+            </div>
+            <div class="project-copy">
+              <div class="project-meta"><span>01</span><span>NUS Orbital · 2026</span></div>
+              <h3>BingeBuddy</h3>
+              <p class="project-lead">A full-stack movie discovery product that turns preferences and ratings into focused recommendations.</p>
+              <ul class="project-tags" aria-label="Technologies used">
+                <li>React</li><li>Node + Express</li><li>Python</li><li>Supabase</li><li>TF-IDF</li>
+              </ul>
+              <button class="text-link" type="button" data-project="bingebuddy">Explore case study <span aria-hidden="true">↗</span></button>
+            </div>
+          </article>
+
+          <article class="project project-mobile reveal">
+            <div class="project-copy">
+              <div class="project-meta"><span>02</span><span>Mobile product · Top 10%</span></div>
+              <h3>Pawductivity</h3>
+              <p class="project-lead">A gamified productivity app where completing work earns rewards for a virtual pet.</p>
+              <ul class="project-tags"><li>Android</li><li>Firebase</li><li>REST APIs</li></ul>
+              <button class="text-link" type="button" data-project="pawductivity">Explore case study <span aria-hidden="true">↗</span></button>
+            </div>
+            <div class="phone-stage" aria-hidden="true">
+              <img src="assets/pawductivity-game.png" alt="" loading="lazy" />
+            </div>
+          </article>
+
+          <article class="project project-ecolume reveal">
+            <div class="project-media">
+              <img src="assets/ecolume-live-dashboard.png" alt="Live compost monitoring dashboard" loading="lazy" />
+            </div>
+            <div class="project-copy">
+              <div class="project-meta"><span>03</span><span>Industry capstone · Top 10%</span></div>
+              <h3>Ecolume</h3>
+              <p class="project-lead">A live compost monitoring platform that combines IoT data, predictive models, and decision tools.</p>
+              <ul class="project-tags"><li>Python</li><li>Machine learning</li><li>Streamlit</li><li>Firebase</li></ul>
+              <button class="text-link" type="button" data-project="ecolume">Explore case study <span aria-hidden="true">↗</span></button>
+            </div>
+          </article>
+
+          <article class="project project-analytics reveal">
+            <div class="analytics-visual" aria-hidden="true">
+              <img src="assets/analytics-clustering.png" alt="" loading="lazy" />
+              <img src="assets/analytics-shap.png" alt="" loading="lazy" />
+            </div>
+            <div class="project-copy">
+              <div class="project-meta"><span>04</span><span>Applied analytics</span></div>
+              <h3>From patterns to explanations</h3>
+              <p class="project-lead">A body of work spanning data mining, machine learning, NLP, and explainable AI.</p>
+              <ul class="project-tags"><li>Scikit-learn</li><li>LightGBM</li><li>SHAP</li><li>Clustering</li></ul>
+              <button class="text-link" type="button" data-project="analytics">Explore case study <span aria-hidden="true">↗</span></button>
+            </div>
+          </article>
+
+          <article class="project project-hack reveal">
+            <div class="project-media">
+              <img src="assets/noahs-ark-team.jpg" alt="Noah's Ark team at HACK 2024" loading="lazy" />
+            </div>
+            <div class="project-copy">
+              <div class="project-meta"><span>05</span><span>#HACK2024</span></div>
+              <h3>Noah’s Ark</h3>
+              <p class="project-lead">A youth engagement and Bible study app shaped with Singapore Youth For Christ and Digital Wesley.</p>
+              <ul class="project-tags"><li>Stakeholder discovery</li><li>Rapid prototyping</li><li>Team delivery</li></ul>
+              <button class="text-link" type="button" data-project="noahsark">Explore case study <span aria-hidden="true">↗</span></button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="section-shell about-grid">
+          <div class="about-title reveal">
+            <p class="eyebrow eyebrow-light"><span></span> About</p>
+            <h2>Technical depth. Product judgment. A bias toward usefulness.</h2>
+          </div>
+          <div class="about-copy reveal">
+            <p class="about-intro">I’m most interested in the space where AI, software, and user needs meet.</p>
+            <p>
+              My work ranges from recommendation engines and live data products to enterprise search workflows and community technology.
+              Across those contexts, I enjoy understanding the real problem, choosing the right level of technical complexity, and making the result clear enough for people to trust and use.
+            </p>
+            <p>
+              I’m currently pursuing a Bachelor of Business AI Systems with Honours at the National University of Singapore, with a minor in Mathematics.
+              Before NUS, I completed a Diploma in Data Science at Ngee Ann Polytechnic with a 3.88/4 cGPA.
+            </p>
+            <div class="about-links">
+              <a href="https://www.linkedin.com/in/hannah-lim-64b13623a" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+              <a href="mailto:hannah.jx.lim@gmail.com">Email <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section section-shell">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span></span> Experience</p>
+            <h2>Built in real teams, for real users.</h2>
+          </div>
+          <p>Experience across enterprise technology, youth engagement, student leadership, and deployed products.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-date">Sep 2024 – Apr 2025</div>
+            <div class="timeline-role">
+              <p>SAP</p>
+              <h3>Generative AI & CXD Legal Technology Intern</h3>
+            </div>
+            <p class="timeline-summary">Developed production data ingestion and indexing workflows for internal documents, connected metadata with databases and enterprise search, and supported contract technology releases for global teams.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">Apr – Aug 2025</div>
+            <div class="timeline-role">
+              <p>Singapore Youth For Christ</p>
+              <h3>Social Work Intern</h3>
+            </div>
+            <p class="timeline-summary">Planned youth programmes across Singapore’s polytechnics, maintained outreach relationships, and supported international volunteering and community initiatives.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2025 – Present</div>
+            <div class="timeline-role">
+              <p>National University of Singapore</p>
+              <h3>Business AI Systems Undergraduate</h3>
+            </div>
+            <p class="timeline-summary">Co-developed BingeBuddy, built a full-stack gym reservation platform for hall residents, and led operations, marketing, and finance for a 32-member volunteering team in rural Laos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills-section">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow"><span></span> Capabilities</p>
+              <h2>Comfortable from model exploration to product delivery.</h2>
+            </div>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-block reveal">
+              <span>01</span>
+              <h3>Applied AI & data</h3>
+              <p>Python, scikit-learn, pandas, NumPy, NLP, recommendation systems, clustering, forecasting, computer vision, model evaluation</p>
+            </article>
+            <article class="skill-block reveal">
+              <span>02</span>
+              <h3>Software & product</h3>
+              <p>React, TypeScript, JavaScript, Django, FastAPI, Node.js, REST APIs, Android, Java, Kotlin, responsive interfaces</p>
+            </article>
+            <article class="skill-block reveal">
+              <span>03</span>
+              <h3>Data platforms</h3>
+              <p>PostgreSQL, Supabase, Prisma ORM, Snowflake, dbt, SQL, ETL pipelines, data modelling, Power BI, Tableau</p>
+            </article>
+            <article class="skill-block reveal">
+              <span>04</span>
+              <h3>Working with people</h3>
+              <p>Stakeholder communication, global collaboration, project coordination, partnership building, community engagement</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="section-shell contact-inner reveal">
+          <p class="eyebrow eyebrow-light"><span></span> Get in touch</p>
+          <h2>Have a problem worth building for?</h2>
+          <p>I’m open to internships, product and AI opportunities, and conversations with people working on useful technology.</p>
+          <a class="contact-email" href="mailto:hannah.jx.lim@gmail.com">hannah.jx.lim@gmail.com <span aria-hidden="true">↗</span></a>
+          <div class="contact-footer">
+            <span>Hannah Lim · Singapore</span>
+            <a href="#top">Back to top ↑</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="case-dialog" data-dialog aria-labelledby="case-title">
+      <button class="dialog-close" type="button" data-close aria-label="Close case study">×</button>
+      <div class="dialog-inner">
+        <div class="dialog-heading">
+          <p class="eyebrow"><span></span> Project case study</p>
+          <p class="dialog-meta" data-case-meta></p>
+          <h2 id="case-title" data-case-title></h2>
+          <p class="dialog-lead" data-case-lead></p>
+          <div class="dialog-links" data-case-links></div>
+        </div>
+        <div class="dialog-gallery" data-case-gallery></div>
+        <div class="dialog-details">
+          <div>
+            <h3>The brief</h3>
+            <p data-case-brief></p>
+          </div>
+          <div>
+            <h3>What I built</h3>
+            <ul data-case-built></ul>
+          </div>
+          <div>
+            <h3>Technology</h3>
+            <p data-case-tech></p>
+          </div>
+          <div>
+            <h3>Context</h3>
+            <p data-case-context></p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
