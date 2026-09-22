@@ -973,6 +973,17 @@ h1 em {
   background: #14141b;
 }
 
+.dialog-gallery figure[data-wide="true"] {
+  grid-column: 1 / -1;
+}
+
+.dialog-gallery figure[data-wide="true"] img {
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  background: #101014;
+}
+
 .dialog-gallery figcaption {
   padding: 10px 13px 12px;
   color: #65666b;
@@ -1253,6 +1264,10 @@ h1 em {
 
   .dialog-gallery img {
     height: 300px;
+  }
+
+  .dialog-gallery figure[data-wide="true"] img {
+    height: auto;
   }
 
   .dialog-details {
