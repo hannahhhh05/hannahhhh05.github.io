@@ -43,15 +43,17 @@ const projects = {
   ecolume: {
     title: "Ecolume",
     meta: "Ngee Ann Polytechnic · Final year capstone · Top 10%",
-    lead: "A web-based compost monitoring platform that turns live sensor data into practical decisions for compost technicians.",
-    brief: "Built for TinkerThings, Ecolume brings fragmented compost work into one operational layer. Live readings show what is happening now; prediction and anomaly detection flag what may need attention; nutrient logs and image history preserve field evidence; and two AI assistants make technical data easier to interrogate. The result is faster diagnosis, less manual record chasing, and more consistent decisions across tanks, sites, and team members.",
+    lead: "A full-stack React platform that connects live compost data, field workflows, predictive analytics, and AI-assisted decision support.",
+    brief: "Built for TinkerThings, Ecolume connects compost operations through a React application, REST APIs, Firebase-backed workflows, live sensor data, and deployed analytics tools. Technicians can monitor current conditions, record nutrient activity, compare images, investigate anomalies, review forecasts, and ask questions of their data. Bringing these capabilities into one system reduces manual record chasing and helps teams act earlier on changing tank conditions.",
     built: [
-      "Live and historical monitoring gives technicians a shared view of nutrient and environmental conditions across tanks and locations",
-      "NPK prediction, forecasting, anomaly detection, and model comparison workflows turn sensor streams into forward-looking decision support",
-      "Tank-specific nutrient entries create a structured operational record, while the image gallery enables visual comparison of compost condition over time",
-      "A multimodal generative-AI chatbot supports field questions using text, voice, and images, while an exploratory-data-analysis chatbot helps users interrogate uploaded datasets without manually building every chart"
+      "A full-stack React application with responsive interfaces, Firebase authentication and data storage, and REST APIs connecting operational workflows and analytical services",
+      "Automated ingestion and cleaning pipelines pull live sensor data from Google Sheets, Google Drive, and PostgreSQL, while scheduled GitHub workflows refresh model outputs and deployed applications",
+      "Multi-output Random Forest regression predicts NPK ratios; model development also covered Decision Trees, regularised regression, XGBoost, AdaBoost, LightGBM, grid search, cross-validation, and model evaluation",
+      "ARIMA and SARIMAX time-series forecasting, seasonal decomposition, and Prophet-based anomaly detection help technicians anticipate nutrient changes and identify unusual readings",
+      "Tank-specific nutrient logging and an image gallery preserve structured and visual field evidence, while Streamlit, Power BI, Pygwalker, and Chart.js make live and historical patterns easier to explore",
+      "A multimodal generative-AI chatbot supports text, voice, image, and video questions; an exploratory-data-analysis chatbot and document querier help users investigate uploaded data and technical resources"
     ],
-    tech: "Python, pandas, scikit-learn, Streamlit, Power BI, HTML, CSS, JavaScript, Bootstrap, Chart.js, Firebase, Google Sheets and PostgreSQL integrations.",
+    tech: "React, JavaScript, HTML, CSS, Bootstrap, REST APIs, Firebase Authentication and Realtime Database, Python, pandas, NumPy, scikit-learn, statsmodels, Prophet, XGBoost, LightGBM, Streamlit, Power BI, Pygwalker, Chart.js, PostgreSQL, Google Sheets and Drive APIs, GitHub Actions, and OpenAI, Gemini, and Claude APIs.",
     context: "The final year project placed in the top 10%. I focused on the composting workflows and worked with live data from multiple locations. Ecolume stands out by joining monitoring, prediction, documentation, visual evidence, and conversational analysis in one workflow—making advanced data capabilities usable for day-to-day operations. We also documented limitations around sensor quality, short time series, and model generalisation rather than overstating performance.",
     links: [],
     gallery: [
@@ -62,16 +64,17 @@ const projects = {
   },
   analytics: {
     title: "Applied AI & Analytics",
-    meta: "Prediction · Data mining · NLP · Computer vision · Explainable AI",
-    lead: "A cross-domain body of work showing how I select and connect AI methods across structured data, language, images, and time-dependent problems.",
-    brief: "The common thread across these projects is model-to-decision fit. I have used classification and regression to predict outcomes, clustering and association rules to reveal structure, time-series methods to understand change, recommendation systems to personalise choices, and NLP and computer vision to work with unstructured inputs. Explainability and evaluation sit alongside modelling so outputs can support a decision—not merely produce a score.",
+    meta: "Prediction · Data mining · Time series · NLP · Explainable AI",
+    lead: "A cross-domain body of work covering the machine-learning and data-science lifecycle across structured data, language, recommendations, and time-dependent problems.",
+    brief: "These projects cover the full analytical workflow: preparing data with pandas and NumPy, engineering useful features, selecting statistical and machine-learning methods, tuning models, evaluating trade-offs, and explaining their behaviour. The work spans supervised and unsupervised learning, classification, regression, clustering, association-rule mining, time-series forecasting, anomaly detection, NLP, and recommendation systems. Each method is chosen for the decision it needs to support rather than for novelty alone.",
     built: [
-      "Predictive modelling across classification, regression, ensemble methods, and systematic model evaluation",
-      "Customer and behavioural segmentation with K-means and hierarchical clustering, plus association-rule mining to surface hidden relationships",
-      "Forecasting and anomaly-detection workflows for operational and time-dependent data",
-      "NLP, recommendation, and computer-vision work for unstructured and personalised use cases, with local and global explanations using SHAP and feature-effect analysis"
+      "Statistical and predictive modelling across classification, regression, regularisation, tree-based ensembles, and systematic model evaluation",
+      "Data mining and unsupervised learning through K-means, hierarchical clustering, behavioural segmentation, and association-rule analysis",
+      "Time-series forecasting, seasonal analysis, and anomaly-detection workflows for operational and temporal data",
+      "NLP and recommendation-system projects for text and personalised use cases",
+      "Feature engineering, hyperparameter tuning, cross-validation, and local and global explanations using SHAP and feature-effect analysis"
     ],
-    tech: "Python, pandas, NumPy, scikit-learn, LightGBM, SHAP, NLP and computer-vision libraries, Matplotlib, Seaborn, Plotly and Jupyter notebooks.",
+    tech: "Python, pandas, NumPy, scikit-learn, data mining, statistical modelling, supervised and unsupervised learning, classification, regression, clustering, ensemble methods, time-series forecasting, anomaly detection, NLP, recommendation systems, feature engineering, hyperparameter tuning, model evaluation, LightGBM, SHAP, Matplotlib, Seaborn, Plotly, Streamlit, and Jupyter notebooks.",
     context: "The business value is versatility across the model lifecycle: frame the decision, prepare imperfect data, choose an appropriate baseline, compare and tune models, evaluate trade-offs, explain behaviour, and translate the result into usable decision support. The selected visuals highlight interpretable structure and instance-level reasoning rather than only final scores.",
     links: [],
     gallery: [
@@ -82,15 +85,15 @@ const projects = {
   noahsark: {
     title: "Noah’s Ark",
     meta: "#HACK2024 · Community technology",
-    lead: "A youth engagement and Bible study app designed to bring event participation, study materials, and community resources into one accessible experience.",
+    lead: "A full-stack React and Firebase app designed to bring youth events, Bible study materials, and community resources into one accessible experience.",
     brief: "Noah’s Ark responds to a practical engagement challenge: young people, leaders, event information, and study resources can become scattered across channels. Bringing them into one product creates a clearer path from first contact to ongoing participation, while giving community partners a shared digital touchpoint for content and engagement.",
     built: [
-      "A unified product concept for event participation, Bible study content, and shared youth resources",
+      "A full-stack React application backed by Firebase for event participation, Bible study content, and shared youth resources",
       "A lower-friction journey from discovering an activity to accessing follow-up material and staying connected",
       "Rapid framing and prototyping at #HACK2024, followed by weekly product development and stakeholder review",
       "Direct feedback from Singapore Youth For Christ—including its director, Richard—and Digital Wesley"
     ],
-    tech: "Rapid product discovery, collaborative prototyping, stakeholder communication, and team delivery.",
+    tech: "React, Firebase, full-stack web development, responsive interface design, product discovery, collaborative prototyping, stakeholder communication, and team delivery.",
     context: "After #HACK2024, we developed the project as far as we could over the following year through weekly meetings with Singapore Youth For Christ and Digital Wesley. Because of our team’s time constraints, the partners later outsourced the remaining development. That year-long continuation helped move the idea beyond a prototype and kept product decisions anchored to operational and community needs.",
     links: [],
     gallery: [
