@@ -33,7 +33,7 @@ const projects = {
     ],
     tech: "Android Studio, Firebase, Android notifications and alarms, ZenQuotes API, MPAndroidChart.",
     context: "A student-led team project placed in the top 10% and was later supported by Ngee Ann Polytechnic for deployment, with a version released on Google Play. Its product value lies in stronger engagement than a utility-only checklist: each productivity action advances the pet experience, giving users an immediate payoff while reinforcing longer-term habits.",
-    links: [],
+    links: [{ label: "Download project slides ↓", href: "downloads/Pawductivity-Project-Slides.pptx", download: true }],
     gallery: [
       { src: "assets/pawductivity-game.png", alt: "Pawductivity virtual pet room", caption: "The pet and reward loop at the centre of the experience", contain: true },
       { src: "assets/pawductivity-tasks.png", alt: "Pawductivity task dashboard", caption: "Prioritised work and time tracking", contain: true },
@@ -55,7 +55,7 @@ const projects = {
     ],
     tech: "React, JavaScript, HTML, CSS, Bootstrap, REST APIs, Firebase Authentication and Realtime Database, Python, pandas, NumPy, scikit-learn, statsmodels, Prophet, XGBoost, LightGBM, Streamlit, Power BI, Pygwalker, Chart.js, PostgreSQL, Google Sheets and Drive APIs, GitHub Actions, and OpenAI, Gemini, and Claude APIs.",
     context: "The final year project placed in the top 10%. I focused on the composting workflows and worked with live data from multiple locations. Ecolume stands out by joining monitoring, prediction, documentation, visual evidence, and conversational analysis in one workflow—making advanced data capabilities usable for day-to-day operations. We also documented limitations around sensor quality, short time series, and model generalisation rather than overstating performance.",
-    links: [],
+    links: [{ label: "Download project report ↓", href: "downloads/Ecolume-Project-Report.docx", download: true }],
     gallery: [
       { src: "assets/ecolume-live-dashboard.png", alt: "Ecolume live compost dashboard", caption: "Live sensor values and trends by tank" },
       { src: "assets/ecolume-npk-app.png", alt: "NPK prediction application", caption: "Predicting nutrient ratios from compost conditions" },
@@ -135,11 +135,15 @@ const fillList = (node, values) => {
 };
 
 const fillLinks = (node, values) => {
-  node.replaceChildren(...values.map(({ label, href }) => {
+  node.replaceChildren(...values.map(({ label, href, download }) => {
     const link = document.createElement("a");
     link.href = href;
-    link.target = "_blank";
-    link.rel = "noreferrer";
+    if (download) {
+      link.download = "";
+    } else {
+      link.target = "_blank";
+      link.rel = "noreferrer";
+    }
     link.textContent = label;
     return link;
   }));
