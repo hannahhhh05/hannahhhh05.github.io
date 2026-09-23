@@ -64,17 +64,17 @@ const projects = {
   },
   analytics: {
     title: "Applied AI & Analytics",
-    meta: "Prediction · Data mining · Time series · NLP · Explainable AI",
-    lead: "A cross-domain body of work covering the machine-learning and data-science lifecycle across structured data, language, recommendations, and time-dependent problems.",
-    brief: "These projects cover the full analytical workflow: preparing data with pandas and NumPy, engineering useful features, selecting statistical and machine-learning methods, tuning models, evaluating trade-offs, and explaining their behaviour. The work spans supervised and unsupervised learning, classification, regression, clustering, association-rule mining, time-series forecasting, anomaly detection, NLP, and recommendation systems. Each method is chosen for the decision it needs to support rather than for novelty alone.",
+    meta: "Prediction · Data mining · Time series · NLP · Computer vision · Explainable AI",
+    lead: "A cross-domain body of work covering the machine-learning and data-science lifecycle across structured data, language, recommendations, images, and time-dependent problems.",
+    brief: "These projects cover the full analytical workflow: preparing data with pandas and NumPy, engineering useful features, selecting statistical and machine-learning methods, tuning models, evaluating trade-offs, and explaining their behaviour. The work spans supervised and unsupervised learning, classification, regression, clustering, association-rule mining, time-series forecasting, anomaly detection, NLP, recommendation systems, and computer vision. Each method is chosen for the decision it needs to support rather than for novelty alone.",
     built: [
       "Statistical and predictive modelling across classification, regression, regularisation, tree-based ensembles, and systematic model evaluation",
       "Data mining and unsupervised learning through K-means, hierarchical clustering, behavioural segmentation, and association-rule analysis",
       "Time-series forecasting, seasonal analysis, and anomaly-detection workflows for operational and temporal data",
-      "NLP and recommendation-system projects for text and personalised use cases",
+      "NLP, recommendation-system, and computer-vision projects turn unstructured text, behavioural signals, and images into searchable, rankable, personalised, or classifiable outputs",
       "Feature engineering, hyperparameter tuning, cross-validation, and local and global explanations using SHAP and feature-effect analysis"
     ],
-    tech: "Python, pandas, NumPy, scikit-learn, data mining, statistical modelling, supervised and unsupervised learning, classification, regression, clustering, ensemble methods, time-series forecasting, anomaly detection, NLP, recommendation systems, feature engineering, hyperparameter tuning, model evaluation, LightGBM, SHAP, Matplotlib, Seaborn, Plotly, Streamlit, and Jupyter notebooks.",
+    tech: "Python, pandas, NumPy, scikit-learn, data mining, statistical modelling, supervised and unsupervised learning, classification, regression, clustering, ensemble methods, time-series forecasting, anomaly detection, NLP, recommendation systems, computer vision, feature engineering, hyperparameter tuning, model evaluation, LightGBM, SHAP, Matplotlib, Seaborn, Plotly, Streamlit, and Jupyter notebooks.",
     context: "The business value is versatility across the model lifecycle: frame the decision, prepare imperfect data, choose an appropriate baseline, compare and tune models, evaluate trade-offs, explain behaviour, and translate the result into usable decision support. The selected visuals highlight interpretable structure and instance-level reasoning rather than only final scores.",
     links: [],
     gallery: [
