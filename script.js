@@ -93,7 +93,7 @@ const projects = {
       "Rapid framing and prototyping at #HACK2024, followed by weekly product development and stakeholder review",
       "Direct feedback from Singapore Youth For Christ—including its director, Richard—and Digital Wesley"
     ],
-    tech: "React, Firebase, full-stack web development, responsive interface design, product discovery, collaborative prototyping, stakeholder communication, and team delivery.",
+    tech: "React, Firebase, full-stack web development, product discovery, and stakeholder communication.",
     context: "After #HACK2024, we developed the project as far as we could over the following year through weekly meetings with Singapore Youth For Christ and Digital Wesley. Because of our team’s time constraints, the partners later outsourced the remaining development. That year-long continuation helped move the idea beyond a prototype and kept product decisions anchored to operational and community needs.",
     links: [],
     gallery: [
